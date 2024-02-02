@@ -1472,9 +1472,10 @@ h5:hover {
 .Info-contenaire {
     margin-top: -80px;
 }
+
 body::before {
     content: "";
-    position: fixed; /* Changez de absolute à fixed */
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -1483,10 +1484,11 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(20px); /* Exemple de filtre, ajustez selon vos besoins */
-    z-index: -1; /* Placez l'élément en dessous du contenu de la page */
-    animation: moveLeftToRight 60s linear infinite; /* 20s pour la durée totale, ajustez selon vos besoins */
-
+    filter: blur(20px);
+    z-index: -1;
+    animation: moveLeftToRight 60s linear infinite;
+    width: 100vw; /* Ajuste la largeur à 100% de la largeur de la vue */
+    height: 100vh; /* Ajuste la hauteur à 100% de la hauteur de la vue */
 }
 
 /* Définition de l'animation */
